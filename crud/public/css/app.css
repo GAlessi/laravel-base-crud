@@ -9,18 +9,13 @@ a {
   color: black;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
 .button {
   display: inline-block;
   padding: 10px 20px;
   background-color: red;
   color: white;
   border: 1px solid orange;
-  margin-top: 50px;
+  margin: 50px 20px;
 }
 
 main {
@@ -28,6 +23,7 @@ main {
   text-align: center;
   min-height: calc(100vh - 120px);
   padding: 20px 0;
+  background-color: aliceblue;
 }
 
 main ul {
@@ -38,6 +34,10 @@ main ul li {
   line-height: 40px;
 }
 
+main ul li a:hover {
+  color: blue;
+}
+
 main form input,
 main form select {
   width: 200px;
@@ -46,6 +46,13 @@ main form select {
 
 main form label {
   display: block;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {

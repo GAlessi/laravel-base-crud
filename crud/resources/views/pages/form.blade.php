@@ -28,7 +28,7 @@
                 <label for="document_type">Type of Document</label>
                 <select  name="document_type">
                     <option selected value="CI">CI</option>
-                    <option value="DriveLicense">Drive License</option>
+                    <option value="DriverLicense">Driver License</option>
                 </select>
                 {{-- <div>
                     <input id="document_type" type="text" name="document_type">
