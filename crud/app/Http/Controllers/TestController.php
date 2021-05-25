@@ -23,4 +23,15 @@ class TestController extends Controller
 
         return view('pages.ospite', compact('ospite'));
     }
+
+    public function form()
+    {
+        return view('pages.form');
+
+    }
+
+    public function store(Request $request) {
+        dd($request -> all());
+
+    }
 }
