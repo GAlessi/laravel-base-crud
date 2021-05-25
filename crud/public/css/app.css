@@ -38,9 +38,14 @@ main ul li {
   line-height: 40px;
 }
 
-main form input {
+main form input,
+main form select {
   width: 200px;
   margin-bottom: 20px;
+}
+
+main form label {
+  display: block;
 }
 
 footer {

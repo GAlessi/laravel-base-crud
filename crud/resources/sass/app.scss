@@ -40,11 +40,13 @@ main{
 
     form{
 
-        input{
+        input, select{
             width: 200px;
             margin-bottom: 20px;
         }
-
+        label{
+            display: block;
+        }
     }
 }
 
