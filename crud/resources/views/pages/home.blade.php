@@ -6,10 +6,10 @@
 
             <ul>
                 @foreach ($ospiti as $ospite)
-                    <li>
+                    <li><a href="{{ route('ospite', $ospite -> id) }}">
                         {{ $ospite -> name}}
                         [{{ $ospite -> id }}]
-                    </li>
+                    </a></li>
                 @endforeach
             </ul>
 
