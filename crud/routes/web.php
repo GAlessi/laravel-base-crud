@@ -6,10 +6,10 @@ Route::get('/ospiti', 'TestController@ospiti')
 -> name('ospiti');
 
 Route::get('/ospiti/ospite/{id}', 'TestController@ospite')
--> name('ospite');
+-> name('ospiti.ospite');
 
 Route::get('/ospiti/create', 'TestController@create')
--> name('create');
+-> name('ospiti.create');
 
 Route::post('/ospiti/store', 'TestController@store')
-    -> name('store');
+    -> name('ospiti.store');

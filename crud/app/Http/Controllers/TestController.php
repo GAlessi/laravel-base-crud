@@ -43,7 +43,7 @@ class TestController extends Controller
 
         // dd($validate);
         $ospite = Ospiti::create($validate);
-        return redirect() -> route('ospite', $ospite -> id);
+        return redirect() -> route('ospiti.ospite', $ospite -> id);
 
     }
 }

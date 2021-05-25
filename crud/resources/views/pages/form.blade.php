@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
     <main>
-        <form method="POST" action="{{ route('store') }}">
+        <form method="POST" action="{{ route('ospiti.store') }}">
             @csrf
             @method('POST')
 

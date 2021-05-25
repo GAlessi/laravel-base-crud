@@ -6,8 +6,8 @@
 
             <ul>
                 @foreach ($ospiti as $ospite)
-                    <li><a href="{{ route('ospite', $ospite -> id) }}">
-                        {{ $ospite -> name}} 
+                    <li><a href="{{ route('ospiti.ospite', $ospite -> id) }}">
+                        {{ $ospite -> name}}
                         {{ $ospite -> lastname}}
                         [{{ $ospite -> id }}]
                     </a></li>
