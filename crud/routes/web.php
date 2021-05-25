@@ -11,5 +11,5 @@ Route::get('/ospite/{id}', 'TestController@ospite')
 Route::get('/form', 'TestController@form')
 -> name('form');
 
-Route::post('/store/movie', 'TestController@store')
+Route::post('/store/ospite', 'TestController@store')
     -> name('store');
