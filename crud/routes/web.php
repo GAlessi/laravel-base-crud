@@ -2,14 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', 'TestController@home')
--> name('home');
+Route::get('/ospiti', 'TestController@ospiti')
+-> name('ospiti');
 
-Route::get('/ospite/{id}', 'TestController@ospite')
+Route::get('/ospiti/ospite/{id}', 'TestController@ospite')
 -> name('ospite');
 
-Route::get('/form', 'TestController@form')
--> name('form');
+Route::get('/ospiti/create', 'TestController@create')
+-> name('create');
 
-Route::post('/store/ospite', 'TestController@store')
+Route::post('/ospiti/store', 'TestController@store')
     -> name('store');

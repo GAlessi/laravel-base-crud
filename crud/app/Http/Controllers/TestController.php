@@ -7,7 +7,7 @@ use App\Ospiti;
 
 class TestController extends Controller
 {
-    public function home(){
+    public function ospiti(){
 
         $ospiti = Ospiti::all();
 
@@ -24,7 +24,7 @@ class TestController extends Controller
         return view('pages.ospite', compact('ospite'));
     }
 
-    public function form()
+    public function create()
     {
         return view('pages.form');
 
