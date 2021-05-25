@@ -19,9 +19,9 @@
             </div>
 
             <div>
-                <label for="original_title">Date</label>
+                <label for="date_of_birth">Date</label>
                 <div>
-                    <input id="title" type="date" name="date">
+                    <input id="date_of_birth" type="date" name="date_of_birth">
                 </div>
             </div>
             <div>
@@ -40,5 +40,14 @@
             <button type="submit" name="button">Send</button>
         </form>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </main>
 @endsection

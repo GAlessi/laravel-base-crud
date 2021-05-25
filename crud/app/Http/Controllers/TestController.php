@@ -41,6 +41,7 @@ class TestController extends Controller
             'document_number' => 'required|max:255'
         ]);
 
+        // dd($validate);
         $ospite = Ospiti::create($validate);
         return redirect() -> route('ospite', $ospite -> id);
 
